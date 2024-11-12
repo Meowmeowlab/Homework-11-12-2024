@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="../css/receipt.css" />
+        <link rel="stylesheet" href="../css/main.css" />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+            rel="stylesheet"
+        />
+    </head>
+    <body>
+        <div class="inputContainer">
+            <h1>Service</h1>
+            <div class="inputWrapper">
+                <label for="serviceId">Mã dịch vụ</label>
+                <span class="inputElementWrapper"
+                    ><input type="text" name="serviceId" id="serviceId"
+                /></span>
+            </div>
+            <div class="inputWrapper">
+                <label for="serviceType">Tên dịch vụ</label>
+                <span class="inputElementWrapper"
+                    ><input type="text" name="serviceType" id="serviceType"
+                /></span>
+            </div>
+            <div class="inputWrapper">
+                <label for="servicePrice">Giá tiền</label>
+                <span class="inputElementWrapper"
+                    ><input type="text" name="servicePrice" id="servicePrice"
+                /></span>
+            </div>
+        </div>
+        <div class="buttonContainer">
+            <div class="buttonWrapper">
+                <button id="addService">Add</button>
+            </div>
+            <div class="buttonWrapper">
+                <button id="updateService">Update</button>
+            </div>
+            <div class="buttonWrapper">
+                <button id="deleteService">Delete</button>
+            </div>
+            <div class="buttonWrapper">
+                <button id="refreshList">Refresh</button>
+            </div>
+        </div>
+        <div class="listOfServicers"></div>
+    </body>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="../js/service.js" type="module"></script>
+</html>

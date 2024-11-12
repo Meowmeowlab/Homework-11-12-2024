@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="../css/receipt.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+            rel="stylesheet"
+        />
+        <title>Document</title>
+    </head>
+    <body>
+        <div class="receiptContainer">
+            <div class="receiptHeader">
+                <div class="imgContainer">
+                    <img src="../asset/img/5x/logo2.png" alt="" class="logo" />
+                </div>
+                <div class="receiptTitle">LUNA HOTEL</div>
+            </div>
+            <div class="userInformationContainers">
+                <div class="userInformationContainer">
+                    <div class="userInfoTitle">Thông tin khách hàng</div>
+                    <div class="userInformationWrapper">
+                        <label for="rUserName">Tên khách:</label>
+                        <div name="rUserName" id="rUserName">Place holder</div>
+                    </div>
+                    <div class="userInformationWrapper">
+                        <label for="rRoomId">Số phòng:</label>
+                        <div name="rRoomId" id="rRoomId">Place holder</div>
+                    </div>
+                    <div class="userInformationWrapper">
+                        <label for="rBookDate">Ngày đến:</label>
+                        <div name="rBookDate" id="rBookDate">Place holder</div>
+                    </div>
+                    <div class="userInformationWrapper">
+                        <label for="rExpireDate">Ngày rời đi:</label>
+                        <div name="rExpireDate" id="rExpireDate">
+                            Place holder
+                        </div>
+                    </div>
+                </div>
+                <div class="userInformationContainer">
+                    <div class="userInfoTitle">Chi tiết đặt phòng</div>
+                    <div class="userInformationWrapper">
+                        <label for="rRoomMngId">Mã đặt phòng:</label>
+                        <div name="rRoomMngId" id="rRoomMngId">
+                            Place holder
+                        </div>
+                    </div>
+                    <div class="userInformationWrapper">
+                        <label for="rReceiptDate">Ngày xuất hóa đơn:</label>
+                        <div name="rReceiptDate" id="rReceiptDate">
+                            Place holder
+                        </div>
+                    </div>
+                    <div class="userInformationWrapper hide">
+                        <label for="">Place holder</label>
+                        <div name="" id="">Place holder</div>
+                    </div>
+                    <div class="userInformationWrapper">
+                        <label for="rReceiptId">Số hóa đơn:</label>
+                        <div name="rReceiptId" id="rReceiptId">
+                            Place holder
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="listOfServicers">
+                <table id="serviceTable">
+                    <tr>
+                        <th>Tên dịch vụ</th>
+                        <th>Số lượng</th>
+                        <th>Đơn giá</th>
+                        <th>Thành tiền</th>
+                    </tr>
+                    <!-- <tr>
+                        <td>ServiceName</td>
+                        <td>Quantity</td>
+                        <td>Price</td>
+                        <td>Total</td>
+                    </tr> -->
+                </table>
+            </div>
+            <div class="receiptFooter">
+                <div class="receiptFooterTitle">
+                    Thank you for choosing to stay with us
+                </div>
+            </div>
+        </div>
+        <template id="row-template">
+            <tr>
+                <td id="name">ServiceName</td>
+                <td id="quantity">Quantity</td>
+                <td id="price">Price</td>
+                <td id="total">Total</td>
+            </tr>
+        </template>
+    </body>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="../js/receipt/printReceipt.js" type="module"></script>
+</html>
